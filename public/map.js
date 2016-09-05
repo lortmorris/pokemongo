@@ -35,6 +35,7 @@ function initMap() {
     });
 
 
+    /*
     setInterval(function () {
         try {
             navigator.geolocation.getCurrentPosition(function (position) {
@@ -48,6 +49,7 @@ function initMap() {
 
     }, 1000);
 
+*/
 
 }
 
