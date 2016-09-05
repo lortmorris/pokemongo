@@ -1,0 +1,12 @@
+.toolbar{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: right;
+    color: white;
+}
+
+.toolbar span{ color: white; cursor: pointer}
