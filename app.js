@@ -1,9 +1,7 @@
 /**
- * Pokemon.io, examples for MongoDB course.
+ * Pokemon.io, example using Node.js & MongoDB
  * Powered By César Casas
  */
-
-
 
 const http = require("http");
 const express = require("express");
@@ -13,9 +11,8 @@ const mongojs = require("mongojs");
 const server = http.createServer(app);
 const config = require("config");
 const debug = require("debug")("pokemongo");
-
 const db = mongojs(config.get("mongodb").host, config.get("mongodb").collections);
-
+const PORT = process.env.PORT || 5000
 
 app.use(express.static("./public"));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -66,4 +63,6 @@ app.post("/savemarkers", (req, res)=> {
     })
 });
 
-app.listen(process.env.PORT || 5000);
+app.listen(PORT, (err)=>{
+  err ? console.log('error') : console.log('listen on *:', PORT);
+});
