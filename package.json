@@ -1,6 +1,6 @@
 {
   "name": "pokemon.io",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pokemon backend example for MongoDB and Node.js",
   "main": "app.js",
   "scripts": {
@@ -14,7 +14,15 @@
     "commander": "^2.16.0",
     "config": "*",
     "debug": "*",
-    "express": "^4.13.3",
+    "express": "^4.17.1",
     "mongojs": "*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.24.0"
   }
 }
